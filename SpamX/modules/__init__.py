@@ -8,7 +8,7 @@ MOD_HELP = {}
 
 
 def list_all_modules() -> list:
-    modules_directory = "DaisyX/modules"
+    modules_directory = "SpamX/modules"
 
     all_modules = []
     for module_name in os.listdir(modules_directory):
