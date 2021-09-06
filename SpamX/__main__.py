@@ -31,7 +31,7 @@ if get_bool_key("LOAD_MODULES"):
         if module_name == "pm_menu":
             continue
         log.debug(f"Importing <d><n>{module_name}</></>")
-        imported_module = import_module("DaisyX.modules." + module_name)
+        imported_module = import_module("SpamX.modules." + module_name)
         if hasattr(imported_module, "__help__"):
             if hasattr(imported_module, "__mod_name__"):
                 MOD_HELP[imported_module.__mod_name__] = imported_module.__help__
@@ -44,11 +44,11 @@ else:
 
 loop = asyncio.get_event_loop()
 
-import_module("DaisyX.modules.pm_menu")
+import_module("SpamX.modules.pm_menu")
 # Import misc stuff
-import_module("DaisyX.utils.exit_gracefully")
+import_module("SpamX.utils.exit_gracefully")
 if not get_bool_key("DEBUG_MODE"):
-    import_module("DaisyX.utils.sentry")
+    import_module("SpamX.utils.sentry")
 
 
 async def before_srv_task(loop):
