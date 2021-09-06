@@ -9,7 +9,7 @@ from aiogram.contrib.fsm_storage.redis import RedisStorage2
 from SpamX.config import get_bool_key, get_int_key, get_list_key, get_str_key
 from SpamX.services.telethon import tbot
 from SpamX.utils.logger import log
-from SpamX.versions import DAISY_VERSION
+from SpamX.versions import SPAMX_VERSION
 
 log.info("|      SpamX      |")
 log.info("Version: " + SPAMX_VERSION)
