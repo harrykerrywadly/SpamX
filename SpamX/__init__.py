@@ -15,7 +15,7 @@ log.info("|      SpamX      |")
 log.info("Version: " + SPAMX_VERSION)
 
 if get_bool_key("DEBUG_MODE") is True:
-    DAISY_VERSION += "-debug"
+    SPAMX_VERSION += "-debug"
     log.setLevel(logging.DEBUG)
     log.warn(
         "! Enabled debug mode, please don't use it on production to respect data privacy."
