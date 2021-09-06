@@ -1,13 +1,7 @@
 
-echo "
-*********** STARTING DEPLOY ***********
-
-DAISYX v2 -Base Aiogram
-(C) 2020-2021 by @TEAMDAISYX
-Support Chat is @DAISYSUPPORT_OFFICIAL.
-
-***************************************
-"
+echo "     Spam X
+    Started deploying SpamX
+    "
 update_and_install_packages () {
     apt -qq update -y
     apt -qq install -y --no-install-recommends \
@@ -28,19 +22,7 @@ install_helper_packages () {
 
 ech_final () {
     echo "
-    
-=++---------------------------------------------++=
-DAISYX. Deployed Successfully
-
- ***************************
- * |D| |A| |I| |S| |Y| |X| *
- ******************* v2.0 ** 
-
-Thanks for deploying DaisyX
-(C) 2020-2021 by @TEAMDAISYX
-Support Chat is @DAISYSUPPORT_OFFICIAL.
-=++---------------------------------------------++=
-                       Greetings from dev team :)
+SpamX deployed successfully!
     "
 }
 
